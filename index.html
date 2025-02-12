@@ -7,26 +7,27 @@
     <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/src/main.js"></script>
   </head>
+
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#homePage">Home</a></li>
-          <li><a href="#aboutPage">About</a></li>
-          <li><a href="#projectsPage">Projects</a></li>
-          <li><a href="#contactPage">Contact</a></li>
+          <li><a id="currentHome" href="#homePage">Home</a></li>
+          <li><a id="currentAbout" href="#aboutPage">About</a></li>
+          <li><a id="currentProjects" href="#projectsPage">Projects</a></li>
+          <li><a id="currentContact" href="#contactPage">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="homePage page">
+    <section id="homePage" class="page">
       <div class="home">
         <h1 class="name effect">Jasmine Sanders</h1>
         <h2 class="title effect">Full Stack Developer</h2>
       </div>
     </section>
 
-    <section class="aboutPage page">
+    <section id="aboutPage" class="page">
       <div class="icons">
         <image class="icon" src="/public/icons/python.png" />
         <image class="icon" src="/public/icons/js.png" />
@@ -47,48 +48,45 @@
           computer programming. Additionally, I am studying Vue.js through Vue
           School and working toward obtaining a Vue.js certification. I have
           experience with several programming languages, including Python,
-          JavaScript, and Java. I am eager to expand my knowledge and experience
+          JavaScript, Typescript, and Java. I am eager to expand my knowledge and experience
           in all aspects of software development.
         </p>
       </div>
     </section>
 
-    <footer class="attribute">
-      <a href="https://www.flaticon.com/free-icons/python" title="python icons"
-        >Python icons created by Freepik - Flaticon</a
-      >
-      <a
-        href="https://www.flaticon.com/free-icons/typescript"
-        title="typescript icons"
-        >Typescript icons created by Freepik - Flaticon</a
-      >
-      <a
-        href="https://www.flaticon.com/free-icons/javascript"
-        title="javascript icons"
-        >Javascript icons created by Freepik - Flaticon</a
-      >
-      <a href="https://www.flaticon.com/free-icons/html" title="html icons"
-        >Html icons created by Freepik - Flaticon</a
-      >
-      <a href="https://www.flaticon.com/free-icons/react" title="react icons"
-        >React icons created by Kiranshastry - Flaticon</a
-      >
-      <a href="https://www.flaticon.com/free-icons/java" title="java icons"
-        >Java icons created by Freepik - Flaticon</a
-      >
-    </footer>
 
-    <section class="projectsPage page">
+
+    <section id="projectsPage" class="page">
+      <h2 class="myProjects">My Projects</h2>
       <div class="projects">
-        <h2>My Projects</h2>
-        <p>
-          This is a placeholder for your projects. In future chapters, you’ll
-          add real projects here.
-        </p>
+        <div class="project">
+          <h1 class="projecTitle">Project 1</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories"><image class="githubIcon" src="./public/images/git-hub-logo.png"/></a>
+          <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
+          add real projects here.</p>
+        </div>
+        <div class="project">
+          <h1 class="projecTitle">Project 2</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories"><image class="githubIcon" src="./public/images/git-hub-logo.png"/></a>
+          <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
+          add real projects here.</p>
+        </div>
+        <div class="project">
+          <h1 class="projecTitle">Project 3</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories"><image class="githubIcon" src="./public/images/git-hub-logo.png"/></a>
+          <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
+          add real projects here.</p>
+        </div>
+        <div class="project">
+          <h1 class="projecTitle">Project 4</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories"><image class="githubIcon" src="./public/images/git-hub-logo.png"/></a>
+          <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
+          add real projects here.</p>
+        </div>
       </div>
     </section>
 
-    <section class="contactPage page">
+    <section id="contactPage" class="page">
       <div class="contact">
         <h2>Contact Me</h2>
         <p>
@@ -97,5 +95,43 @@
         </p>
       </div>
     </section>
+
+        <footer >
+          <div class="iconAttribute">
+            <a 
+              href="https://www.flaticon.com/free-icons/python" 
+              title="python icons"
+              >Python icons created by Freepik - Flaticon
+            </a>
+            <a
+              href="https://www.flaticon.com/free-icons/typescript"
+              title="typescript icons"
+              >Typescript icons created by Freepik - Flaticon
+            </a>
+            <a
+              href="https://www.flaticon.com/free-icons/javascript"
+              title="javascript icons"
+              >Javascript icons created by Freepik - Flaticon
+            </a>
+            <a 
+              href="https://www.flaticon.com/free-icons/html" 
+              title="html icons"
+              >Html icons created by Freepik - Flaticon
+            </a>
+            <a 
+              href="https://www.flaticon.com/free-icons/react" 
+              title="react icons"
+              >React icons created by Kiranshastry - Flaticon
+            </a>
+            <a 
+              href="https://www.flaticon.com/free-icons/java" 
+              title="java icons"
+              >Java icons created by Freepik - Flaticon</a
+            >
+      </div>
+      <div class="nameAttribute">
+        <p>&copy; 2024 Jasmine Sanders</p>
+      </div>
+    </footer>
   </body>
 </html>

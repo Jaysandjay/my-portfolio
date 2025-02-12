@@ -10,6 +10,10 @@ body {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   height: 100vh;
   width: 100%;
@@ -19,21 +23,21 @@ section {
   display: flex;
 }
 
-.homePage {
+#homePage {
   flex-flow: column;
   background-image: url("/public/images/technology-7111755_1920.jpg");
 }
 
-.aboutPage {
+#aboutPage {
   background-image: url("/public/images/technology-7111757_1920.jpg");
 }
 
-.projectsPage {
+#projectsPage {
   flex-flow: column;
   background-image: url("/public/images/technology-7111752_1920.jpg");
 }
 
-.contactPage {
+#contactPage {
   flex-flow: column;
   background-image: url("/public/images/technology-7111756_1920.jpg");
 }
@@ -64,7 +68,7 @@ li {
   margin-right: 20px;
 }
 
-a {
+li a {
   color: white;
   text-decoration: none;
   opacity: 0.7;
@@ -150,8 +154,68 @@ a:hover {
   }
 }
 
-.attribute {
+footer {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   font-size: 10px;
+  width: 100%;
+}
+
+footer div {
+  height: 15px;
+}
+
+.nameAttribute {
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.iconAttribute a {
+  color: white;
+  text-decoration: none;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.githubIcon {
+  height: 200px;
+}
+.project a {
+  transition: transform 0.3s;
+}
+.project a:hover {
+  transform: scale(1.05);
+}
+
+.myProjects {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+.project {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 5px solid purple;
+  border-radius: 10px;
+  height: 500px;
+  width: 300px;
+  padding: 8px;
+  background-color: rgb(128, 128, 128, 0.5);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.contact {
+  padding-top: 80px;
+  padding-left: 20px;
 }
