@@ -25,21 +25,21 @@ section {
 
 #homePage {
   flex-flow: column;
-  background-image: url("/public/images/technology-7111755_1920.jpg");
+  background-image: url("public/images/technology-7111755_1920.jpg");
 }
 
 #aboutPage {
-  background-image: url("/public/images/technology-7111757_1920.jpg");
+  background-image: url("public/images/technology-7111757_1920.jpg");
 }
 
 #projectsPage {
   flex-flow: column;
-  background-image: url("/public/images/technology-7111752_1920.jpg");
+  background-image: url("public/images/technology-7111752_1920.jpg");
 }
 
 #contactPage {
   flex-flow: column;
-  background-image: url("/public/images/technology-7111756_1920.jpg");
+  background-image: url("public/images/technology-7111756_1920.jpg");
 }
 
 header {
