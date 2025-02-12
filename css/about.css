@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-flow: column;
+    background-image: url("/public/images/technology-7111757_1920.jpg");
+}
+
+.container {
+    display: flex;
+}
+
+.icons {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 800px;
+    height: 250px;
+    padding-left: 100px;
+}
+.about {
+    width: 800px;
+    padding: 200px;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.icon{
+    height: 70px;
+    width: 70px;
+    animation: rotate-animation 3.5s infinite linear
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotateY(0deg);
+  }
+  50% {
+		transform: rotateY(180deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+.attribute{
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+}
+

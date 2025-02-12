@@ -1,0 +1,40 @@
+
+header {
+    background-color: #27776c7c;
+    color: white;
+    padding: 20px;
+    height: fit-content;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.current {
+    text-decoration: underline;
+    opacity: 1;
+}
