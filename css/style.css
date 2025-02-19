@@ -2,6 +2,7 @@
 
 html,
 body {
+  height: 100%;
   font-family: "Chakra Petch", serif;
   font-weight: 300;
   font-style: normal;
@@ -21,6 +22,8 @@ section {
 
 .page {
   display: flex;
+  min-height: 919px;
+  min-width: 1285px;
 }
 
 #homePage {
