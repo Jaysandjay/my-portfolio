@@ -52,6 +52,7 @@ header {
   height: fit-content;
   text-align: center;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -59,12 +60,10 @@ ul {
   display: flex;
   justify-content: center;
   gap: 100px;
-}
-
-ul {
   list-style: none;
   padding: 0;
 }
+
 
 li {
   display: inline;
@@ -222,3 +221,7 @@ footer div {
   padding-top: 80px;
   padding-left: 20px;
 }
+
+
+
+

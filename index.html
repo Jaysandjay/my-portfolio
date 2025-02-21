@@ -6,6 +6,8 @@
     <meta name="description" content="A Web Developer Portfolio for Jasmine Sanders"/>
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/averagePhoneSize.css">
+    <link rel="stylesheet" href="css/smallPhoneSize.css">
     <script defer src="src/main.js"></script>
   </head>
 
@@ -13,10 +15,10 @@
     <header>
       <nav>
         <ul>
-          <li><a id="currentHome" href="#homePage">Home</a></li>
-          <li><a id="currentAbout" href="#aboutPage">About</a></li>
-          <li><a id="currentProjects" href="#projectsPage">Projects</a></li>
-          <li><a id="currentContact" href="#contactPage">Contact</a></li>
+          <li><a id="currentHome" aria-label="Link to Home" href="#homePage">Home</a></li>
+          <li><a id="currentAbout" aria-label="Link to About" href="#aboutPage">About</a></li>
+          <li><a id="currentProjects" aria-label="Link to Projects" href="#projectsPage">Projects</a></li>
+          <li><a id="currentContact" aria-label="Link to Contact" href="#contactPage">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -60,38 +62,52 @@
 
 
     <section id="projectsPage" class="page">
-      <h2 class="myProjects">My Projects</h2>
+      <h2 class="title myProjects">My Projects</h2>
       <div class="projects">
         <div class="project">
-          <h1 class="projecTitle">Project 1</h1>
-          <a href="https://github.com/Jaysandjay?tab=repositories"><img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 1" /></a>
+          <h1 class="projectTitle">Project 1</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories">
+            <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 1" />
+          </a>
           <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
           add real projects here.</p>
         </div>
         <div class="project">
-          <h1 class="projecTitle">Project 2</h1>
-          <a href="https://github.com/Jaysandjay?tab=repositories"><img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 2" /></a>
-          <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
-          add real projects here.</p>
+          <h1 class="projectTitle">Project 2</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories">
+            <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 2" />
+          </a>
+          <p class="projectDescription"> 
+            This is a placeholder for your projects. In future chapters, you’ll
+            add real projects here.
+          </p>
         </div>
         <div class="project">
-          <h1 class="projecTitle">Project 3</h1>
-          <a href="https://github.com/Jaysandjay?tab=repositories"><img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 3" /></a>
-          <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
-          add real projects here.</p>
+          <h1 class="projectTitle">Project 3</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories">
+            <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 3" />
+          </a>
+          <p class="projectDescription">
+            This is a placeholder for your projects. In future chapters, you’ll
+            add real projects here.
+          </p>
         </div>
         <div class="project">
-          <h1 class="projecTitle">Project 4</h1>
-          <a href="https://github.com/Jaysandjay?tab=repositories"><img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 4" /></a>
-          <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
-          add real projects here.</p>
+          <h1 class="projectTitle">Project 4</h1>
+          <a href="https://github.com/Jaysandjay?tab=repositories">
+            <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 4" />
+          </a>
+          <p class="projectDescription">
+            This is a placeholder for your projects. In future chapters, you’ll
+            add real projects here.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="contactPage" class="page">
       <div class="contact">
-        <h2>Contact Me</h2>
+        <h2 class="title">Contact Me</h2>
         <p>
           In the future, this will be a contact form. For now, just leave this
           as a placeholder.
