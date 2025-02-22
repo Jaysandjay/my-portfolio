@@ -64,7 +64,6 @@ ul {
   padding: 0;
 }
 
-
 li {
   display: inline;
   margin-right: 20px;
@@ -191,9 +190,11 @@ footer div {
 .githubIcon {
   height: 200px;
 }
+
 .project a {
   transition: transform 0.3s;
 }
+
 .project a:hover {
   transform: scale(1.05);
 }
@@ -221,7 +222,3 @@ footer div {
   padding-top: 80px;
   padding-left: 20px;
 }
-
-
-
-
