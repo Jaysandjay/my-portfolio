@@ -38,10 +38,12 @@ function toggleProjectDisplay(btn){
   if (description.classList.contains("show")){
     btn.innerHTML = "Show Description"
     description.classList.remove("show")
-    project.style.height = calc(project.getBoundingClientRect().height + description.getBoundingClientRect().height)
+    // project.style.height = calc(project.getBoundingClientRect().height + description.getBoundingClientRect().height)
+    project.classList.remove("open")
   } else {
     btn.innerHTML = "Hide Description"
     description.classList.add("show")
-    project.style.height = project.getBoundingClientRect().height
+    // project.style.height = project.getBoundingClientRect().height
+    project.classList.add("open")
   }
 }
