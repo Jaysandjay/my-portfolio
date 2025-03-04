@@ -34,11 +34,12 @@ projectButtons.forEach((btn) =>{
 
 function toggleProjectDisplay(btn){
   const description = btn.parentNode.querySelector("p")
-  if (description.style.display === "none"){
-    btn.innerHTML = "Hide Description"
-    description.style.display = "block"
-  } else {
-    description.style.display = "none"
+  if (description.classList.contains("show")){
     btn.innerHTML = "Show Description"
+    description.classList.remove("show")
+    console.log("clicked")
+  } else {
+    btn.innerHTML = "Hide Description"
+    description.classList.add("show")
   }
 }
