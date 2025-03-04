@@ -33,13 +33,15 @@ projectButtons.forEach((btn) =>{
 })
 
 function toggleProjectDisplay(btn){
+  const project = btn.parentNode
   const description = btn.parentNode.querySelector("p")
   if (description.classList.contains("show")){
     btn.innerHTML = "Show Description"
     description.classList.remove("show")
-    console.log("clicked")
+    project.style.height = calc(project.getBoundingClientRect().height + description.getBoundingClientRect().height)
   } else {
     btn.innerHTML = "Hide Description"
     description.classList.add("show")
+    project.style.height = project.getBoundingClientRect().height
   }
 }
