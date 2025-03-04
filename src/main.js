@@ -5,6 +5,8 @@ const aboutNav = document.getElementById("currentAbout");
 const projectsNav = document.getElementById("currentProjects");
 const contactNav = document.getElementById("currentContact");
 
+const projectButtons = document.querySelectorAll(".projectBtn")
+
 const navList = [homeNav, aboutNav, projectsNav, contactNav]
 
 document.addEventListener('scroll', () => {
@@ -25,3 +27,12 @@ document.addEventListener('scroll', () => {
         }
     }
 })
+
+projectButtons.forEach((btn) =>{
+  btn.addEventListener("click", () => toggleProjectDisplay(btn))
+})
+
+function toggleProjectDisplay(btn){
+  console.log(btn)
+  console.log('clicked')
+}
