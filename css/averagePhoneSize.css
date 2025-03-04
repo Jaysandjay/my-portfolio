@@ -91,7 +91,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 50px;
-    height: 100%;
+    height: 60%;
   }
 
   .githubIcon {
@@ -107,7 +107,7 @@
     height: 150px;
     width: 180px;
     padding: 2px;
-    margin-top: 60px;
+    margin-top: 10px;
   }
 
   .projectTitle {
@@ -115,7 +115,7 @@
   }
 
   .projectDescription {
-    padding-top: 30px;
+    padding-top: 5px;
     font-size: 12px;
     text-align: center;
   }
