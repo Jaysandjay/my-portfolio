@@ -33,6 +33,12 @@ projectButtons.forEach((btn) =>{
 })
 
 function toggleProjectDisplay(btn){
-  console.log(btn)
-  console.log('clicked')
+  const description = btn.parentNode.querySelector("p")
+  if (description.style.display === "none"){
+    btn.innerHTML = "Hide Description"
+    description.style.display = "block"
+  } else {
+    description.style.display = "none"
+    btn.innerHTML = "Show Description"
+  }
 }
