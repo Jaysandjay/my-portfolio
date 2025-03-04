@@ -113,21 +113,36 @@
       <div class="contact">
         <h2 class="title">Contact Me</h2>
 
-        <form id="contactForm">
-          <h3>Send me an email!</h3>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"/>
-          <span class="error" id="nameError">Please insert name</span> <br/>
+        <div class="formContainer">
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"/>
-          <span class="error" id="emailError">Invalid Email</span> <br/>
+          <h3 class="formTitle">Send me an email!</h3>
+          <form id="contactForm">
+          
+          <div class="contactInfo">
 
-          <label for="message">Message:</label>
-          <input type="text" id="message" name="message"/>
-          <span class="error" id="messageError">Please insert message</span> <br/>
+          <div class="userInfo">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"/> <br/>
+            <span class="error" id="nameError">Please insert name</span>
+          </div>
 
+          <div class="userInfo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"/><br/>
+            <span class="error" id="emailError">Invalid Email</span> 
+          </div>
+        </div>
+
+          <div class="messageContainer">
+            <label for="message">Message:</label>
+            <textarea type="text" id="message" name="message"></textarea><br/>
+            <span class="error" id="messageError">Please insert message</span> 
+          </div>
+
+          <button class="submit">Send</button>
         </form>
+
+        </div>
       </div>
     </section>
 
