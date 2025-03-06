@@ -22,7 +22,7 @@ section {
 
 .page {
   display: flex;
-  min-height: 919px;
+  min-height: 100vh;
   min-width: 1285px;
 }
 
@@ -182,9 +182,10 @@ footer div {
 
 .projects {
   display: flex;
+  flex: 1;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  border: 1px solid black;
 }
 
 .githubIcon {
