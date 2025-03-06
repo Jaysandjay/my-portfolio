@@ -32,6 +32,7 @@ section {
 }
 
 #aboutPage {
+  display: flex;
   background-image: url("../public/images/technology-7111757_1920.jpg");
 }
 
@@ -118,6 +119,7 @@ a:hover {
 }
 
 .icons {
+  flex: 1;
   align-self: center;
   justify-content: center;
   display: flex;
@@ -128,8 +130,11 @@ a:hover {
   padding-left: 100px;
 }
 .about {
-  width: 800px;
-  padding: 200px;
+  flex: 1.5;
+  flex-grow: column;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 20vh;
 }
 
 .description {
@@ -185,7 +190,6 @@ footer div {
   flex: 1;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
 }
 
 .githubIcon {
