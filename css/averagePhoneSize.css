@@ -12,12 +12,14 @@
   }
 
   header {
+    box-sizing: border-box;
+    width: 100vw;
     padding: 8px;
     height: 50px;
   }
 
   ul {
-    gap: 15px;
+    gap: 25px;
     padding-top: 5px;
   }
 
