@@ -273,8 +273,7 @@ footer div {
 
 .formTitle{
   justify-self: center;
-  font-size: 20px;
-  border: 1px solid black;
+  font-size: 25px;
 }
 
 #contactForm{
@@ -283,14 +282,12 @@ footer div {
   flex-flow: column;
   justify-content: space-between;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .contactInfo{
   display: flex;
   gap:20px;
   padding: 10px;
-  border: 1px solid black;
 }
 
 .error{
@@ -320,7 +317,6 @@ input{
   flex: 1;
   padding-left: 50px;
   align-content: center;
-  border: 1px solid black;
 }
 
 #message{
