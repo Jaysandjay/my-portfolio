@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/averagePhoneSize.css">
     <link rel="stylesheet" href="css/smallPhoneSize.css">
+    <link rel="stylesheet" href="css/laptopSize.css">
     <script defer src="src/main.js"></script>
   </head>
 
@@ -119,18 +120,17 @@
           <form id="contactForm">
           
           <div class="contactInfo">
+            <div class="userInfo">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"/> <br/>
+              <span class="error" id="nameError">Please insert name</span>
+            </div>
 
-          <div class="userInfo">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"/> <br/>
-            <span class="error" id="nameError">Please insert name</span>
-          </div>
-
-          <div class="userInfo">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"/><br/>
-            <span class="error" id="emailError">Invalid Email</span> 
-          </div>
+            <div class="userInfo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"/><br/>
+              <span class="error" id="emailError">Invalid Email</span> 
+            </div>
         </div>
 
           <div class="messageContainer">
