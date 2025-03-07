@@ -15,7 +15,7 @@ document.addEventListener("scroll", () => {
     currentPage = "currentAbout";
   } else if (window.scrollY >= 1600 && window.scrollY <= 1960) {
     currentPage = "currentProjects";
-  } else if (window.scrollY === 2757) {
+  } else {
     currentPage = "currentContact";
   }
   for (const page of navList) {
