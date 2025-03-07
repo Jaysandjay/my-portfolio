@@ -55,6 +55,14 @@
     text-align: center;
   }
 
+  #typed{
+    position: absolute;
+    bottom: 35%;
+    display: inline;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
   .effect:hover {
     transform: scale(1.05);
   }

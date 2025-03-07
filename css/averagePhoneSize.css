@@ -44,6 +44,14 @@
     text-align: center;
   }
 
+  #typed{
+    position: absolute;
+    bottom: 35%;
+    display: inline;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
   .icons {
     padding-top: 20px;
     gap: 20px;
