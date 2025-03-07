@@ -213,6 +213,10 @@
     padding: 5px;
   }
 
+  .submit {
+    margin-top: 25px;
+  }
+
   #successMessage {
     flex-grow: column;
     justify-items: center;
