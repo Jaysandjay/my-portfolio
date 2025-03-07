@@ -47,3 +47,16 @@ function toggleProjectDisplay(btn){
     project.classList.add("open")
   }
 }
+
+// FORM
+
+const form = document.getElementById("contactForm")
+
+const nameInput = document.getElementById("name")
+const emailInput = document.getElementById("email")
+const message = document.getElementById("message")
+
+form.addEventListener('submit', (e) =>{
+  e.preventDefault()
+  console.log("clicked")
+})
