@@ -60,31 +60,49 @@ const nameError = document.getElementById("nameError")
 const emailError = document.getElementById("emailError")
 const messageError = document.getElementById("messageError")
 
+const success = document.getElementById("successMessage")
+const closeMessage = document.getElementById("close")
+
 form.addEventListener('submit', (e) =>{
+  let isValid = true
+
   nameError.style.display = "none"
   emailError.style.display = "none"
   messageError.style.display = "none"
   
   if (nameInput.value.trim() === ""){
     nameError.style.display = "block"
-    e.preventDefault()
+    isValid = false
   }
 
   if (emailInput.value.trim() === '') {
     emailError.style.display = "block"
-    e.preventDefault();
+    isValid = false
   } else if (!validateEmail(emailInput.value)) {
     emailError.style.display = "block"
-    e.preventDefault();
+    isValid = false
   }
-  
+
   if (message.value.trim() === ""){
     messageError.style.display = "block"
-    e.preventDefault
+    isValid = false
   }
+
+  if(isValid){
+    success.style.display = "block"
+    nameInput.value = ""
+    emailInput.value = ""
+    message.value = ""
+  }
+
+  e.preventDefault()
 })
 
 function validateEmail(email) {
   const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   return re.test(String(email));
 }
+
+closeMessage.addEventListener("click", () => {
+  success.style.display = "none"
+})
