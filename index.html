@@ -28,8 +28,7 @@
     <section id="homePage" class="page">
       <div class="home">
         <h1 class="name effect">Jasmine Sanders</h1>
-        <h2 class="title effect">Full Stack Developer</h2>
-      </div>
+        <span id="typed" class="title effect"></span>
     </section>
 
     <section id="aboutPage" class="page">
@@ -64,39 +63,43 @@
     <section id="projectsPage" class="page">
       <h2 class="title myProjects">My Projects</h2>
       <div class="projects">
-        <div class="project">
+        <div class="project project1">
           <h1 class="projectTitle">Project 1</h1>
           <a href="https://github.com/Jaysandjay?tab=repositories">
             <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 1" />
           </a>
+          <button id="project1Btn" class="projectBtn">Show Description</button>
           <p class="projectDescription"> This is a placeholder for your projects. In future chapters, you’ll
           add real projects here.</p>
         </div>
-        <div class="project">
+        <div class="project project2">
           <h1 class="projectTitle">Project 2</h1>
           <a href="https://github.com/Jaysandjay?tab=repositories">
             <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 2" />
           </a>
+          <button id="project2Btn" class="projectBtn">Show Description</button>
           <p class="projectDescription"> 
             This is a placeholder for your projects. In future chapters, you’ll
             add real projects here.
           </p>
         </div>
-        <div class="project">
+        <div class="project project3">
           <h1 class="projectTitle">Project 3</h1>
           <a href="https://github.com/Jaysandjay?tab=repositories">
             <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 3" />
           </a>
+          <button id="project3Btn" class="projectBtn">Show Description</button>
           <p class="projectDescription">
             This is a placeholder for your projects. In future chapters, you’ll
             add real projects here.
           </p>
         </div>
-        <div class="project">
+        <div class="project project4">
           <h1 class="projectTitle">Project 4</h1>
           <a href="https://github.com/Jaysandjay?tab=repositories">
             <img class="githubIcon" src="./public/images/git-hub-logo.png" alt="Git Hub Icon Link for Project 4" />
           </a>
+          <button id="project4Btn" class="projectBtn">Show Description</button>
           <p class="projectDescription">
             This is a placeholder for your projects. In future chapters, you’ll
             add real projects here.
@@ -108,12 +111,45 @@
     <section id="contactPage" class="page">
       <div class="contact">
         <h2 class="title">Contact Me</h2>
-        <p>
-          In the future, this will be a contact form. For now, just leave this
-          as a placeholder.
-        </p>
+
+        <div class="formContainer">
+
+          <h3 class="formTitle">Send me an email!</h3>
+          <form id="contactForm">
+          
+          <div class="contactInfo">
+            <div class="userInfo">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"/> <br/>
+              <span class="error" id="nameError">Please insert name</span>
+            </div>
+
+            <div class="userInfo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"/><br/>
+              <span class="error" id="emailError">Invalid Email</span> 
+            </div>
+        </div>
+
+          <div class="messageContainer">
+            <label for="message">Message:</label>
+            <textarea type="text" id="message" name="message"></textarea><br/>
+            <span class="error" id="messageError">Please insert message</span> 
+          </div>
+
+          <button type="submit" class="submit">Send</button>
+        </form>
+
+        </div>
       </div>
     </section>
+
+    <div id="successMessage">
+      <h1>Message sent!</h1>
+      <h2>Thank you for your message.</h2>
+      <h2>I will reply as soon as possible.</h2>
+      <div id="close">X</div>
+    </div>
 
     </main>
 
@@ -154,5 +190,18 @@
         <p>&copy; 2025 Jasmine Sanders</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed("#typed", {
+          strings: ["Full Stack Developer", "Computer Programming Student"],
+          typeSpeed: 50,
+          backSpeed: 30,
+          backDelay: 500,
+          startDelay: 500,
+          loop: true,
+          showCursor: false
+        });
+
+    </script>
   </body>
 </html>

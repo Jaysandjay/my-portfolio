@@ -22,7 +22,7 @@ section {
 
 .page {
   display: flex;
-  min-height: 919px;
+  min-height: 100vh;
   min-width: 1285px;
 }
 
@@ -32,6 +32,7 @@ section {
 }
 
 #aboutPage {
+  display: flex;
   background-image: url("../public/images/technology-7111757_1920.jpg");
 }
 
@@ -113,11 +114,20 @@ a:hover {
   transform: scale(1.2);
 }
 
+#typed {
+  position: absolute;
+  bottom: 35%;
+  display: inline;
+  font-size: 50px;
+  font-weight: normal;
+}
+
 .iconContainer {
   display: flex;
 }
 
 .icons {
+  flex: 1;
   align-self: center;
   justify-content: center;
   display: flex;
@@ -128,8 +138,11 @@ a:hover {
   padding-left: 100px;
 }
 .about {
-  width: 800px;
-  padding: 200px;
+  flex: 1.5;
+  flex-grow: column;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 20vh;
 }
 
 .description {
@@ -182,9 +195,9 @@ footer div {
 
 .projects {
   display: flex;
+  flex: 1;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
 }
 
 .githubIcon {
@@ -208,17 +221,163 @@ footer div {
   display: flex;
   flex-flow: column;
   align-items: center;
-  border: 5px solid purple;
+  border: 5px solid rgb(128, 0, 128);
   border-radius: 10px;
-  height: 500px;
+  height: 300px;
   width: 300px;
   padding: 8px;
   background-color: rgb(128, 128, 128, 0.5);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: height 0.1s linear;
+}
+
+.project.open {
+  height: calc-size(auto, size);
+}
+
+.projectBtn {
+  color: white;
+  background-color: rgb(128, 0, 128);
+  border-radius: 15px;
+  border-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 5px;
+  height: fit-content;
+  min-height: 7%;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.projectBtn:hover {
+  background-color: rgb(183, 43, 226);
+}
+
+.projectDescription {
+  display: none;
+}
+
+.projectDescription.show {
+  display: block;
 }
 
 .contact {
   padding-top: 80px;
   padding-left: 20px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  color: black;
+  background-color: #f7eeee;
+  border-radius: 30px;
+  height: 65vh;
+  width: 100vh;
+  font-family: "Chakra Petch", serif;
+  font-style: normal;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.formTitle {
+  justify-self: center;
+  font-size: 25px;
+}
+
+#contactForm {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  justify-content: space-between;
+  justify-content: space-between;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  display: none;
+}
+
+label {
+  display: flex;
+  margin: 5px;
+  font-family: "Chakra Petch", serif;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+input {
+  height: 25px;
+  width: 35vh;
+  border-radius: 5px;
+}
+
+.input:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.messageContainer {
+  flex: 1;
+  padding-left: 50px;
+  align-content: center;
+}
+
+#message {
+  flex-grow: 1;
+  height: 70%;
+  width: 62vh;
+  margin-bottom: 5px;
+  margin-top: 3px;
+  padding: 5px;
+}
+
+.submit {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: "Chakra Petch", serif;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+.submit:hover {
+  background-color: rgb(238, 221, 199);
+  cursor: pointer;
+}
+
+#successMessage {
+  flex-grow: column;
+  justify-items: center;
+  align-content: center;
+  position: fixed;
+  padding: 10px;
+  background-color: rgb(50, 199, 199);
+  border-radius: 30px;
+  width: 50vw;
+  height: 50vh;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#close {
+  position: relative;
+  bottom: 65%;
+  left: 47%;
+  font-size: 20px;
+  cursor: pointer;
 }
