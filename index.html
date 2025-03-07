@@ -28,12 +28,7 @@
     <section id="homePage" class="page">
       <div class="home">
         <h1 class="name effect">Jasmine Sanders</h1>
-        <div class="text__editor">
-          <div class="text__body">
-              $&nbsp;<span id="typed"></span>
-          </div>
-      </div>
-      </div>
+        <h2 id="typed" class="title effect"></h2>
     </section>
 
     <section id="aboutPage" class="page">
@@ -198,6 +193,8 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       const typed = new Typed("#typed",{
+        strings: ["Full Stack Developer"],
+        typeSpeed: 50
       });
 
     </script>
