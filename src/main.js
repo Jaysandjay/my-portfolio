@@ -58,5 +58,23 @@ const message = document.getElementById("message")
 
 form.addEventListener('submit', (e) =>{
   e.preventDefault()
-  console.log("clicked")
+  
+  if (nameInput.value.trim() === ""){
+    e.preventDefault()
+  }
+
+  if (emailInput.value.trim() === '') {
+    e.preventDefault();
+  } else if (!validateEmail(emailInput.value)) {
+    e.preventDefault();
+  }
+
+  if (message.value.trim() === ""){
+    e.preventDefault
+  }
 })
+
+function validateEmail(email) {
+  const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return re.test(String(email));
+}

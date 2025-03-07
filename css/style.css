@@ -296,7 +296,7 @@ footer div {
 }
 
 .error{
-  display: none;
+  /* display: none; */
 }
 
 label{
