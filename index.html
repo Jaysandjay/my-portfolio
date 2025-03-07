@@ -28,7 +28,11 @@
     <section id="homePage" class="page">
       <div class="home">
         <h1 class="name effect">Jasmine Sanders</h1>
-        <h2 class="title effect">Full Stack Developer</h2>
+        <div class="text__editor">
+          <div class="text__body">
+              $&nbsp;<span id="typed"></span>
+          </div>
+      </div>
       </div>
     </section>
 
@@ -191,5 +195,11 @@
         <p>&copy; 2025 Jasmine Sanders</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed("#typed",{
+      });
+
+    </script>
   </body>
 </html>
