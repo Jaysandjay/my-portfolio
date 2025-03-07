@@ -114,7 +114,7 @@ a:hover {
   transform: scale(1.2);
 }
 
-#typed{
+#typed {
   position: absolute;
   bottom: 35%;
   display: inline;
@@ -230,14 +230,13 @@ footer div {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   transition: height 0.1s linear;
-
 }
 
-.project.open{
-  height: calc-size(auto, size)
+.project.open {
+  height: calc-size(auto, size);
 }
 
-.projectBtn{
+.projectBtn {
   color: white;
   background-color: rgb(128, 0, 128);
   border-radius: 15px;
@@ -250,16 +249,16 @@ footer div {
   cursor: pointer;
 }
 
-.projectBtn:hover{
+.projectBtn:hover {
   background-color: rgb(183, 43, 226);
 }
 
-.projectDescription{
+.projectDescription {
   display: none;
 }
 
-.projectDescription.show{
-  display: block
+.projectDescription.show {
+  display: block;
 }
 
 .contact {
@@ -267,7 +266,7 @@ footer div {
   padding-left: 20px;
 }
 
-.formContainer{
+.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,12 +283,12 @@ footer div {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.formTitle{
+.formTitle {
   justify-self: center;
   font-size: 25px;
 }
 
-#contactForm{
+#contactForm {
   display: flex;
   flex: 1;
   flex-flow: column;
@@ -297,44 +296,43 @@ footer div {
   justify-content: space-between;
 }
 
-.contactInfo{
+.contactInfo {
   display: flex;
-  gap:20px;
+  gap: 20px;
   padding: 10px;
 }
 
-.error{
+.error {
   color: red;
   font-size: 10px;
   display: none;
 }
 
-label{
+label {
   display: flex;
   margin: 5px;
   font-family: "Chakra Petch", serif;
   font-weight: 600;
   padding-bottom: 5px;
-
 }
 
-input{
+input {
   height: 25px;
   width: 35vh;
   border-radius: 5px;
 }
 
-.input:hover{
+.input:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.messageContainer{
+.messageContainer {
   flex: 1;
   padding-left: 50px;
   align-content: center;
 }
 
-#message{
+#message {
   flex-grow: 1;
   height: 70%;
   width: 62vh;
@@ -343,7 +341,7 @@ input{
   padding: 5px;
 }
 
-.submit{
+.submit {
   display: block;
   margin: auto;
   width: 100px;
@@ -355,12 +353,12 @@ input{
   background-color: antiquewhite;
 }
 
-.submit:hover{
+.submit:hover {
   background-color: rgb(238, 221, 199);
   cursor: pointer;
 }
 
-#successMessage{
+#successMessage {
   flex-grow: column;
   justify-items: center;
   align-content: center;
@@ -376,7 +374,7 @@ input{
   display: none;
 }
 
-#close{
+#close {
   position: relative;
   bottom: 75%;
   left: 47%;
