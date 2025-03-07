@@ -56,20 +56,30 @@ const nameInput = document.getElementById("name")
 const emailInput = document.getElementById("email")
 const message = document.getElementById("message")
 
+const nameError = document.getElementById("nameError")
+const emailError = document.getElementById("emailError")
+const messageError = document.getElementById("messageError")
+
 form.addEventListener('submit', (e) =>{
-  e.preventDefault()
+  nameError.style.display = "none"
+  emailError.style.display = "none"
+  messageError.style.display = "none"
   
   if (nameInput.value.trim() === ""){
+    nameError.style.display = "block"
     e.preventDefault()
   }
 
   if (emailInput.value.trim() === '') {
+    emailError.style.display = "block"
     e.preventDefault();
   } else if (!validateEmail(emailInput.value)) {
+    emailError.style.display = "block"
     e.preventDefault();
   }
-
+  
   if (message.value.trim() === ""){
+    messageError.style.display = "block"
     e.preventDefault
   }
 })
