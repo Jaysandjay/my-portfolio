@@ -217,5 +217,51 @@
     margin-top: 3px;
     padding: 5px;
   }
+
+  .submit{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-family: "Chakra Petch", serif;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: antiquewhite;
+  }
+
+  #successMessage{
+    flex-grow: column;
+    justify-items: center;
+    align-content: start;
+    position: fixed;
+    padding: 10px;
+    background-color: rgb(50, 199, 199);
+    border-radius: 30px;
+    width: 70vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  #successMessage h2{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #successMessage h1{
+    padding-top: 30px;
+  }
+  
+  #close{
+    position: relative;
+    bottom: 95%;
+    left: 47%;
+    font-size: 20px;
+    cursor: pointer;
+  }
   
 }
