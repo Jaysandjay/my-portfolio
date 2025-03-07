@@ -126,4 +126,84 @@
     padding-top: 20px;
     padding-left: 10px;
   }
+
+  .contact {
+    padding: 10px;
+  }
+
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    color: black;
+    background-color: #f7eeee;
+    border-radius: 30px;
+    height: 65vh;
+    width: 95vw;
+    font-family: "Chakra Petch", serif;
+    font-style: normal;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .formTitle{
+    justify-self: center;
+    font-size: 25px;
+  }
+  
+  #contactForm{
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    align-items: center;
+
+  }
+  
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    padding: 10px;
+  }
+  
+  .error{
+    display: none;
+  }
+  
+  label{
+    display: flex;
+    margin: 5px;
+    font-family: "Chakra Petch", serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+  
+  }
+  
+  input{
+    height: 25px;
+    width: 35vh;
+    border-radius: 5px;
+  }
+  
+  .input:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .messageContainer{
+    flex: 1;
+    padding-left: 0px;
+    align-content: center;
+  }
+  
+  #message{
+    flex-grow: 1;
+    height: 70%;
+    width: 70vw;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    padding: 5px;
+  }
 }
