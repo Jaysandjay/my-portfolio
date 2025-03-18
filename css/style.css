@@ -261,6 +261,126 @@ footer div {
   display: block;
 }
 
+
+
+/* Card proposal */
+
+
+.card {
+  box-sizing: border-box;
+  width: 280px;
+  height: 450px;
+  transition: 0.3s;
+  perspective: 1000px;
+}
+
+.card-inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 60px 40px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url(../public/images/PointW.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.front h2 {
+  font-weight: 500;
+}
+
+.front {
+  color: #ccc;
+}
+
+.front button {
+  width: 120px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+}
+
+.back {
+  background: rgb(115, 21, 126, 0.8);
+  color: white;
+  transform: rotateY(180deg);
+
+}
+
+.back h2{
+  font-size: 25px;
+  line-height: 55px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.back p{
+  font-weight: 14px;
+}
+
+.back button {
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  /* background: #510c6e;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  padding: 8px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3); */
+  cursor: pointer;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.proj-logos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.proj-logos img, .git-hub-logo{
+  height: 45px;
+  width: 45px
+}
+
+.links {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .contact {
   padding-top: 80px;
   padding-left: 20px;
