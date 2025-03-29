@@ -269,7 +269,7 @@ footer div {
 .card {
   box-sizing: border-box;
   width: 280px;
-  height: 450px;
+  height: 400px;
   transition: 0.3s;
   perspective: 1000px;
 }
@@ -500,4 +500,32 @@ input {
   left: 47%;
   font-size: 20px;
   cursor: pointer;
+}
+
+@media only screen and (max-height: 620px) {
+  .page{
+    box-sizing: border-box;
+    min-height: 620px;
+    min-width: 1285px;
+  }
+
+  .formContainer{
+    min-height: 400px;
+    min-width: 640px;
+  }
+
+  #contactForm{
+    min-height: 340px;
+    min-width: 500px;
+  }
+
+  form div input {
+    min-height: 25px;
+    min-width: 230px;
+  }
+
+  #message {
+    min-height: 161px;
+    min-width: 410px;
+  }
 }
