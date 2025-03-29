@@ -138,6 +138,7 @@ a:hover {
   height: 250px;
   padding-left: 100px;
 }
+
 .about {
   flex: 1.5;
   flex-grow: column;
@@ -266,6 +267,25 @@ footer div {
 
 /* Card proposal */
 
+#pointW{
+  background: url(../public/images/PointW.png);
+}
+
+#blog{
+  background: url(../public/images/Blog.png);
+  background-position: center;
+  background-size: contain;
+  color: black;
+}
+
+#blog button {
+  color: black !important;
+  
+  border: 1px solid black !important;
+}
+
+
+
 
 .card {
   box-sizing: border-box;
@@ -295,7 +315,6 @@ footer div {
 }
 
 .front {
-  background: url(../public/images/PointW.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -326,7 +345,6 @@ footer div {
   background: rgb(115, 21, 126, 0.8);
   color: white;
   transform: rotateY(180deg);
-
 }
 
 .back h2{
