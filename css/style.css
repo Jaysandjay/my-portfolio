@@ -280,10 +280,14 @@ footer div {
 
 #blog button {
   color: black !important;
-  
   border: 1px solid black !important;
 }
 
+#typeDefender {
+  background: url(../public/images/typeDefender.png);
+  background-position: center;
+  background-size: contain;
+}
 
 
 
@@ -309,7 +313,7 @@ footer div {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 40px 40px;
+  padding: 10px 40px;
   border-radius: 15px;
   backface-visibility: hidden;
 }
