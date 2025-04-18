@@ -29,21 +29,25 @@ section {
 #homePage {
   flex-flow: column;
   background-image: url("../public/images/technology-7111755_1920.jpg");
+  background-size: cover;
 }
 
 #aboutPage {
   display: flex;
   background-image: url("../public/images/technology-7111757_1920.jpg");
+  background-size: cover;
 }
 
 #projectsPage {
   flex-flow: column;
   background-image: url("../public/images/technology-7111752_1920.jpg");
+  background-size: cover;
 }
 
 #contactPage {
   flex-flow: column;
   background-image: url("../public/images/technology-7111756_1920.jpg");
+  background-size: cover;
 }
 
 header {
@@ -195,6 +199,16 @@ footer div {
   text-decoration: none;
 }
 
+
+
+
+/* Card proposal */
+
+.myProjects {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
 .projects {
   display: flex;
   flex: 1;
@@ -202,70 +216,11 @@ footer div {
   align-items: center;
 }
 
-.githubIcon {
-  height: 200px;
+#pizzaPalace{
+  background: url(../public/images/Pizza-3007395.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.project a {
-  transition: transform 0.3s;
-}
-
-.project a:hover {
-  transform: scale(1.05);
-}
-
-.myProjects {
-  padding-top: 100px;
-  padding-left: 20px;
-}
-
-.project {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  border: 5px solid rgb(128, 0, 128);
-  border-radius: 10px;
-  height: 300px;
-  width: 300px;
-  padding: 8px;
-  background-color: rgb(128, 128, 128, 0.5);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: height 0.1s linear;
-}
-
-.project.open {
-  height: calc-size(auto, size);
-}
-
-.projectBtn {
-  color: white;
-  background-color: rgb(128, 0, 128);
-  border-radius: 15px;
-  border-style: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 5px;
-  height: fit-content;
-  min-height: 7%;
-  width: fit-content;
-  cursor: pointer;
-}
-
-.projectBtn:hover {
-  background-color: rgb(183, 43, 226);
-}
-
-.projectDescription {
-  display: none;
-}
-
-.projectDescription.show {
-  display: block;
-}
-
-
-
-/* Card proposal */
 
 #pointW{
   background: url(../public/images/PointW.png);
@@ -288,8 +243,6 @@ footer div {
   background-position: center;
   background-size: contain;
 }
-
-
 
 .card {
   box-sizing: border-box;
