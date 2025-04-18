@@ -121,31 +121,7 @@
     height: 400px;
   }
 
-  .githubIcon {
-    height: 50px;
-  }
-
-  .myProjects {
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-
-  .project {
-    height: 130px;
-    width: 120px;
-    padding: 2px;
-    margin-top: 5px;
-  }
-
-  .projectTitle {
-    font-size: 15px;
-  }
-
-  .projectDescription {
-    font-size: 12px;
-    text-align: center;
-    padding-top: 2px;
-  }
+  
 
   .contact {
     padding: 10px;
@@ -270,4 +246,176 @@
     font-size: 20px;
     cursor: pointer;
   }
+
+
+
+  /* Card proposal */
+
+.myProjects {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.projects {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#pizzaPalace{
+  background: url(../public/images/Pizza-3007395.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#pointW{
+  background: url(../public/images/PointW.png);
+}
+
+#blog{
+  background: url(../public/images/Blog.png);
+  background-position: center;
+  background-size: contain;
+  color: black;
+}
+
+#blog button {
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+#typeDefender {
+  background: url(../public/images/typeDefender.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  transition: 0.3s;
+  perspective: 1000px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  z-index: 0;
+}
+
+.card:hover .card-inner {
+  transform: none;
+  width: 300px;
+  height: 100px;
+  
+}
+
+.front, .back {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px;
+  border-radius: 15px;
+  backface-visibility: visible;
+}
+
+
+.front {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.front h2 {
+  font-weight: 500;
+  margin: 2px;
+}
+
+.front {
+  color: #ccc;
+}
+
+.front button {
+  width: 120px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.back {
+  background: none;
+  transform: rotateY(180deg);
+}
+
+.back h2{
+  font-size: 25px;
+  line-height: 55px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  visibility: hidden;
+}
+
+.back p{
+  font-weight: 14px;
+  visibility: hidden;
+}
+
+.back button {
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.proj-logos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  visibility: hidden;
+}
+
+.proj-logos img, .git-hub-logo{
+  height: 45px;
+  width: 45px
+  
+}
+
+.links {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100 !important;
+  visibility: visible;
+  transform: rotateY(180deg);
+}
+
+.blogButton{
+  color: black !important;
+}
+
 }

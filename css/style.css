@@ -29,21 +29,25 @@ section {
 #homePage {
   flex-flow: column;
   background-image: url("../public/images/technology-7111755_1920.jpg");
+  background-size: cover;
 }
 
 #aboutPage {
   display: flex;
   background-image: url("../public/images/technology-7111757_1920.jpg");
+  background-size: cover;
 }
 
 #projectsPage {
   flex-flow: column;
   background-image: url("../public/images/technology-7111752_1920.jpg");
+  background-size: cover;
 }
 
 #contactPage {
   flex-flow: column;
   background-image: url("../public/images/technology-7111756_1920.jpg");
+  background-size: cover;
 }
 
 header {
@@ -55,6 +59,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 ul {
@@ -137,6 +142,7 @@ a:hover {
   height: 250px;
   padding-left: 100px;
 }
+
 .about {
   flex: 1.5;
   flex-grow: column;
@@ -193,6 +199,16 @@ footer div {
   text-decoration: none;
 }
 
+
+
+
+/* Card proposal */
+
+.myProjects {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
 .projects {
   display: flex;
   flex: 1;
@@ -200,65 +216,138 @@ footer div {
   align-items: center;
 }
 
-.githubIcon {
-  height: 200px;
+#pizzaPalace{
+  background: url(../public/images/Pizza-3007395.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.project a {
-  transition: transform 0.3s;
+#pointW{
+  background: url(../public/images/PointW.png);
 }
 
-.project a:hover {
-  transform: scale(1.05);
+#blog{
+  background: url(../public/images/Blog.png);
+  background-position: center;
+  background-size: contain;
+  color: black;
 }
 
-.myProjects {
-  padding-top: 100px;
-  padding-left: 20px;
+#blog button {
+  color: black !important;
+  border: 1px solid black !important;
 }
 
-.project {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  border: 5px solid rgb(128, 0, 128);
-  border-radius: 10px;
-  height: 300px;
-  width: 300px;
-  padding: 8px;
-  background-color: rgb(128, 128, 128, 0.5);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: height 0.1s linear;
+#typeDefender {
+  background: url(../public/images/typeDefender.png);
+  background-position: center;
+  background-size: contain;
 }
 
-.project.open {
-  height: calc-size(auto, size);
+.card {
+  box-sizing: border-box;
+  width: 280px;
+  height: 400px;
+  transition: 0.3s;
+  perspective: 1000px;
 }
 
-.projectBtn {
-  color: white;
-  background-color: rgb(128, 0, 128);
+.card-inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px;
   border-radius: 15px;
-  border-style: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 5px;
-  height: fit-content;
-  min-height: 7%;
-  width: fit-content;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.front h2 {
+  font-weight: 500;
+}
+
+.front {
+  color: #ccc;
+}
+
+.front button {
+  width: 120px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+}
+
+.back {
+  background: rgb(115, 21, 126, 0.8);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.back h2{
+  font-size: 25px;
+  line-height: 55px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.back p{
+  font-weight: 14px;
+}
+
+.back button {
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+ 
   cursor: pointer;
 }
 
-.projectBtn:hover {
-  background-color: rgb(183, 43, 226);
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.proj-logos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
 }
 
-.projectDescription {
-  display: none;
+.proj-logos img, .git-hub-logo{
+  height: 45px;
+  width: 45px
 }
 
-.projectDescription.show {
-  display: block;
+.links {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .contact {
@@ -380,4 +469,32 @@ input {
   left: 47%;
   font-size: 20px;
   cursor: pointer;
+}
+
+@media only screen and (max-height: 620px) {
+  .page{
+    box-sizing: border-box;
+    min-height: 620px;
+    min-width: 1285px;
+  }
+
+  .formContainer{
+    min-height: 400px;
+    min-width: 640px;
+  }
+
+  #contactForm{
+    min-height: 340px;
+    min-width: 500px;
+  }
+
+  form div input {
+    min-height: 25px;
+    min-width: 230px;
+  }
+
+  #message {
+    min-height: 161px;
+    min-width: 410px;
+  }
 }
